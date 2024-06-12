@@ -58,7 +58,7 @@ df.select(expr("CustomerId"), fabricatedQuantity.alias("realQuantity")).show(2)
 
 df.selectExpr(
   "CustomerId",
-  "(POWER((Quantity * UnitPrice), 2.0) + 5) as realQuantity").show(2)
+  (POWER((Quantity * UnitPrice), 2.0) + 5) as realQuantity").show(2)
 
 
 # COMMAND ----------
